@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Brunaccio</title>
+</head>
+<body>
+    <section>
+        <h1>Calculadora de Alquiler de Baños Químicos</h1>
+
+        <form>
+          <label for="cantidadBaniosInput">Cantidad de baños:</label>
+          <input type="number" id="cantidadBaniosInput" min="2" required>
+      
+          <label for="diasInput">Duración del alquiler (días):</label>
+          <input type="number" id="diasInput" min="1" required>
+      
+          <label for="serviciosMantenimientoInput">Servicios de mantenimiento y limpieza:</label>
+          <select id="serviciosMantenimientoInput" required>
+            <option value="">Seleccionar</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+      
+          <label for="pagosInput">Pago en efectivo:</label>
+          <select id="pagosInput" required>
+            <option value="">Seleccionar</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+      
+          <label for="tarjetaCuotasInput">Cuotas para el pago con tarjeta:</label>
+          <input type="number" id="tarjetaCuotasInput" min="1" max="6">
+      
+          <button id="calcularButton">Calcular</button>
+        </form>
+      
+        <div id="resultado"></div>
+    </section>
+    
+
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
